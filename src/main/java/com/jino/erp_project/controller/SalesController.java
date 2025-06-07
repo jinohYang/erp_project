@@ -1,5 +1,6 @@
 package com.jino.erp_project.controller;
 
+import com.jino.erp_project.common.ApiResponse;
 import com.jino.erp_project.dto.SalesRequest;
 import com.jino.erp_project.dto.SalesResponse;
 import com.jino.erp_project.service.SalesService;
@@ -16,27 +17,52 @@ public class SalesController {
     private final SalesService salesService;
 
     @PostMapping
-    public SalesResponse create(@RequestBody SalesRequest req) {
-        return salesService.create(req);
+    public ApiResponse<SalesResponse> create(@RequestBody SalesRequest req) {
+        SalesResponse result = salesService.create(req);
+        return ApiResponse.<SalesResponse>builder()
+                .success(true)
+                .message("매출 등록 성공")
+                .data(result)
+                .build();
     }
 
     @GetMapping
-    public List<SalesResponse> findAll() {
-        return salesService.findAll();
+    public ApiResponse<List<SalesResponse>> findAll() {
+        List<SalesResponse> result = salesService.findAll();
+        return ApiResponse.<List<SalesResponse>>builder()
+                .success(true)
+                .message("매출 목록 조회 성공")
+                .data(result)
+                .build();
     }
 
     @GetMapping("/date")
-    public List<SalesResponse> findAllByDate(@RequestParam LocalDate date) {
-        return salesService.findAllByDate(date);
+    public ApiResponse<List<SalesResponse>> findAllByDate(@RequestParam LocalDate date) {
+        List<SalesResponse> result = salesService.findAllByDate(date);
+        return ApiResponse.<List<SalesResponse>>builder()
+                .success(true)
+                .message("특정일 매출 조회 성공")
+                .data(result)
+                .build();
     }
 
     @GetMapping("/employee/{employeeId}")
-    public List<SalesResponse> findAllByEmployee(@PathVariable Long employeeId) {
-        return salesService.findAllByEmployee(employeeId);
+    public ApiResponse<List<SalesResponse>> findAllByEmployee(@PathVariable Long employeeId) {
+        List<SalesResponse> result = salesService.findAllByEmployee(employeeId);
+        return ApiResponse.<List<SalesResponse>>builder()
+                .success(true)
+                .message("직원별 매출 조회 성공")
+                .data(result)
+                .build();
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Long id) {
+    public ApiResponse<Void> delete(@PathVariable Long id) {
         salesService.delete(id);
+        return ApiResponse.<Void>builder()
+                .success(true)
+                .message("매출 삭제 성공")
+                .data(null)
+                .build();
     }
 }

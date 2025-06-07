@@ -1,5 +1,6 @@
 package com.jino.erp_project.controller;
 
+import com.jino.erp_project.common.ApiResponse;
 import com.jino.erp_project.dto.AttendanceResponse;
 import com.jino.erp_project.service.AttendanceService;
 import lombok.RequiredArgsConstructor;
@@ -13,34 +14,54 @@ import java.util.List;
 public class AttendanceController {
     private final AttendanceService attendanceService;
 
-    // 출근
     @PostMapping("/clock-in")
-    public AttendanceResponse clockIn(@RequestParam Long employeeId) {
-        return attendanceService.clockIn(employeeId);
+    public ApiResponse<AttendanceResponse> clockIn(@RequestParam Long employeeId) {
+        AttendanceResponse result = attendanceService.clockIn(employeeId);
+        return ApiResponse.<AttendanceResponse>builder()
+                .success(true)
+                .message("출근 처리 성공")
+                .data(result)
+                .build();
     }
 
-    // 퇴근
     @PostMapping("/clock-out")
-    public AttendanceResponse clockOut(@RequestParam Long employeeId) {
-        return attendanceService.clockOut(employeeId);
+    public ApiResponse<AttendanceResponse> clockOut(@RequestParam Long employeeId) {
+        AttendanceResponse result = attendanceService.clockOut(employeeId);
+        return ApiResponse.<AttendanceResponse>builder()
+                .success(true)
+                .message("퇴근 처리 성공")
+                .data(result)
+                .build();
     }
 
-    // 연차신청
     @PostMapping("/annual-leave")
-    public AttendanceResponse annualLeave(@RequestParam Long employeeId,
-                                          @RequestParam(required = false) String note) {
-        return attendanceService.applyAnnualLeave(employeeId, note);
+    public ApiResponse<AttendanceResponse> annualLeave(@RequestParam Long employeeId,
+                                                       @RequestParam(required = false) String note) {
+        AttendanceResponse result = attendanceService.applyAnnualLeave(employeeId, note);
+        return ApiResponse.<AttendanceResponse>builder()
+                .success(true)
+                .message("연차 신청 성공")
+                .data(result)
+                .build();
     }
 
-    // 직원별 근태 목록 조회
     @GetMapping("/employee/{employeeId}")
-    public List<AttendanceResponse> findAllByEmployee(@PathVariable Long employeeId) {
-        return attendanceService.findAllByEmployee(employeeId);
+    public ApiResponse<List<AttendanceResponse>> findAllByEmployee(@PathVariable Long employeeId) {
+        List<AttendanceResponse> result = attendanceService.findAllByEmployee(employeeId);
+        return ApiResponse.<List<AttendanceResponse>>builder()
+                .success(true)
+                .message("직원별 근태 목록 조회 성공")
+                .data(result)
+                .build();
     }
 
-    // 근태 상세 조회
     @GetMapping("/{id}")
-    public AttendanceResponse findById(@PathVariable Long id) {
-        return attendanceService.findById(id);
+    public ApiResponse<AttendanceResponse> findById(@PathVariable Long id) {
+        AttendanceResponse result = attendanceService.findById(id);
+        return ApiResponse.<AttendanceResponse>builder()
+                .success(true)
+                .message("근태 상세 조회 성공")
+                .data(result)
+                .build();
     }
 }

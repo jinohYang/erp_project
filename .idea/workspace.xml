@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3be74377-4915-4982-92d3-121c97f21840" name="변경" comment="feat / Spring 3.5.0와 springdoc 2.5.0 버전 호환 문제로swagger 의존성 제거">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/ErpProjectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/common/ApiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/common/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/AttendanceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/DepartmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/ExpenseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/InventoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/PositionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/SalesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Attendance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Expense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Inventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/Sales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/domain/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/AttendanceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/AttendanceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/EmployeeRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/EmployeeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/ExpenseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/ExpenseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/InventoryRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/InventoryResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/ProductRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/ProductResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/SalesRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/SalesResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/UserLoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/UserLoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/UserProfileResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/UserSignupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/dto/UserSignupResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/AttendanceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/DepartmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/ExpenseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/InventoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/PositionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/SalesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/security/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/security/JwtTokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/AttendanceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/DepartmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/ExpenseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/InventoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/PositionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/SalesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jino/erp_project/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jino/erp_project/ErpProjectApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master-dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jinohYang&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jinohYang/erp_project.git&quot;,
+    &quot;accountId&quot;: &quot;974bef76-3204-4af7-81b4-3a6270373dde&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2xzk9MHvKTaAViOuBV3AKfaGu9r" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.erp_project [:com.jino.erp_project.ErpProjectApplication.main()].executor": "Run",
+    "Gradle.erp_project 빌드.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/WorkSpace/Spring/erp_project/src/main/resources",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WorkSpace\Spring\erp_project\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ErpProjectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jino.erp_project.ErpProjectApplication" />
+      <module name="erp_project.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jino.erp_project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.ErpProjectApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="3be74377-4915-4982-92d3-121c97f21840" name="변경" comment="" />
+      <created>1748948136802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748948136802</updated>
+    </task>
+    <task id="LOCAL-00001" summary="feat / 로그인 구현, JWT 인증 구현">
+      <option name="closed" value="true" />
+      <created>1749047083901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749047083901</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat / 직원,부서,직책 관리 기능 추가">
+      <option name="closed" value="true" />
+      <created>1749264762513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749264762513</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat / 근태 관리 API 추가">
+      <option name="closed" value="true" />
+      <created>1749265034368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749265034368</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat / 회계 관리 API 추가">
+      <option name="closed" value="true" />
+      <created>1749265502083</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749265502083</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat / 재고 관리 API 추가">
+      <option name="closed" value="true" />
+      <created>1749265855268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749265855268</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat / Api Response 공통 객체 추가.">
+      <option name="closed" value="true" />
+      <created>1749266630413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749266630413</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat / 로그인 인증 API - 공통 Response 적용">
+      <option name="closed" value="true" />
+      <created>1749267215407</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749267215407</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat / swagger 추가 중..">
+      <option name="closed" value="true" />
+      <created>1749269703736</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749269703736</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat / swagger 추가 중..">
+      <option name="closed" value="true" />
+      <created>1749270075448</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749270075448</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat / Spring 3.5.0와 springdoc 2.5.0 버전 호환 문제로swagger 의존성 제거">
+      <option name="closed" value="true" />
+      <created>1749270156308</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749270156308</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="cb3418a9-3000-4ae3-b3ca-fad95045379d" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="cb3418a9-3000-4ae3-b3ca-fad95045379d">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat / 로그인 구현, JWT 인증 구현" />
+    <MESSAGE value="feat / 직원,부서,직책 관리 기능 추가" />
+    <MESSAGE value="feat / 근태 관리 API 추가" />
+    <MESSAGE value="feat / 회계 관리 API 추가" />
+    <MESSAGE value="feat / 재고 관리 API 추가" />
+    <MESSAGE value="feat / Api Response 공통 객체 추가." />
+    <MESSAGE value="feat / 로그인 인증 API - 공통 Response 적용" />
+    <MESSAGE value="feat / swagger 추가 중.." />
+    <MESSAGE value="feat / Spring 3.5.0와 springdoc 2.5.0 버전 호환 문제로swagger 의존성 제거" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat / Spring 3.5.0와 springdoc 2.5.0 버전 호환 문제로swagger 의존성 제거" />
+  </component>
+</project>

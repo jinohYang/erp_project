@@ -1,0 +1,11 @@
+# IDE 환경 파일
+.idea/
+*.iml
+
+# 빌드/배포 파일
+/build
+/node_modules
+
+# OS 별 불필요 파일
+.DS_Store
+Thumbs.db
